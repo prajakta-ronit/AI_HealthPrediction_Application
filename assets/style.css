@@ -1,0 +1,254 @@
+/* =====================================
+   MAIN APPLICATION
+===================================== */
+
+.stApp {
+    background-color: #F4F8FB;
+    font-family: 'Inter', sans-serif;
+    color: #263B50;
+}
+
+.block-container {
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+    max-width: 1400px;
+}
+
+/* =====================================
+   HIDE DEFAULT STREAMLIT ELEMENTS
+===================================== */
+
+#MainMenu,
+footer {
+    visibility: hidden;
+}
+
+/* =====================================
+   HEADINGS
+===================================== */
+
+h1 {
+    color: #153B50;
+    font-weight: 750;
+    letter-spacing: -0.8px;
+}
+
+h2 {
+    color: #1B5265;
+    font-weight: 650;
+}
+
+h3 {
+    color: #276477;
+    font-weight: 600;
+}
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+.nav-container {
+    background: white;
+    padding: 18px 25px;
+    border-radius: 14px;
+    margin-bottom: 30px;
+    border: 1px solid #E2ECF2;
+    box-shadow: 0 3px 12px rgba(25, 70, 90, 0.04);
+}
+
+/* =====================================
+   DASHBOARD CARDS
+===================================== */
+
+.dashboard-card {
+    background: white;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid #E1EBF0;
+    box-shadow: 0 5px 18px rgba(25, 70, 90, 0.05);
+    min-height: 130px;
+    transition: all 0.25s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 24px rgba(25, 70, 90, 0.09);
+}
+
+.card-title {
+    color: #718797;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-value {
+    color: #153B50;
+    font-size: 30px;
+    font-weight: 750;
+    margin-top: 12px;
+}
+
+/* =====================================
+   WELCOME SECTION
+===================================== */
+
+.welcome-card {
+    background: linear-gradient(
+        120deg,
+        #087F8C,
+        #16A6A6,
+        #39B8AC
+    );
+    padding: 38px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 28px;
+    box-shadow: 0 8px 25px rgba(8, 127, 140, 0.15);
+}
+
+.welcome-card h2 {
+    color: white;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.welcome-card p {
+    color: #E7FFFF;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.stButton > button {
+    background: linear-gradient(135deg, #087F8C, #119FA0);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 11px 22px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    background: #066873;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 12px rgba(8, 127, 140, 0.2);
+}
+
+/* =====================================
+   INPUT FIELDS
+===================================== */
+
+.stTextInput input,
+.stNumberInput input,
+.stDateInput input,
+.stSelectbox div[data-baseweb="select"] {
+    border-radius: 9px;
+}
+
+.stTextInput input:focus,
+.stNumberInput input:focus {
+    border-color: #087F8C;
+}
+
+/* =====================================
+   CHAT INTERFACE
+===================================== */
+
+[data-testid="stChatMessage"] {
+    border-radius: 14px;
+    padding: 12px;
+}
+
+[data-testid="stChatInput"] {
+    border-radius: 12px;
+}
+
+/* =====================================
+   DATAFRAMES
+===================================== */
+
+[data-testid="stDataFrame"] {
+    border-radius: 12px;
+    border: 1px solid #E2ECF2;
+}
+
+/* =====================================
+   MODERN NAVIGATION BAR
+===================================== */
+
+div[role="radiogroup"] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+    background: white;
+    border: 1px solid #E2ECF2;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(25, 70, 90, 0.04);
+}
+
+div[role="radiogroup"] label {
+    background: #F4F8FB;
+    border-radius: 9px;
+    padding: 10px 18px;
+    border: 1px solid transparent;
+    color: #526B7A;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+div[role="radiogroup"] label:hover {
+    border-color: #087F8C;
+    background: #E9F7F7;
+    color: #087F8C;
+}
+
+div[role="radiogroup"] label:has(input:checked) {
+    background: #087F8C;
+    color: white;
+    border-color: #087F8C;
+    box-shadow: 0 3px 10px rgba(8, 127, 140, 0.15);
+}
+/* =====================================
+   DIVIDERS
+===================================== */
+
+hr {
+    border-color: #E2ECF2;
+}
+
+/* =====================================
+   ALERT MESSAGES
+===================================== */
+
+[data-testid="stAlert"] {
+    border-radius: 12px;
+}
+
+/* =====================================
+   RESPONSIVE LAYOUT
+===================================== */
+
+@media (max-width: 768px) {
+
+    .block-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .welcome-card {
+        padding: 24px;
+    }
+
+    .welcome-card h2 {
+        font-size: 23px;
+    }
+
+    .card-value {
+        font-size: 24px;
+    }
+}

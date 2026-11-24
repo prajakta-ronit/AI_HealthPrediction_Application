@@ -1,0 +1,11 @@
+parameter,value,unit
+Hemoglobin,13.5,g/dL
+RBC,4.8,million/uL
+WBC,7500,cells/uL
+Platelets,250000,cells/uL
+Glucose,105,mg/dL
+HbA1c,5.8,%
+Cholesterol,190,mg/dL
+HDL,45,mg/dL
+LDL,115,mg/dL
+Creatinine,0.9,mg/dL
